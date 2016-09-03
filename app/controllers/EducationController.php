@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class EducationController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -81,5 +81,6 @@ class HomeController extends BaseController {
 	{
 		//
 	}
+
 
 }

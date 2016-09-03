@@ -1,6 +1,6 @@
 <?php
 // HOME PAGE
-Route::resource('/home', 'HomeController');
+Route::resource('/', 'HomeController');
 
 // SEARCH PAGE
 Route::resource('/search', 'SearchController');
