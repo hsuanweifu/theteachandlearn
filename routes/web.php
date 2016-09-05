@@ -43,6 +43,7 @@ Route::resource('/settings/education_information',  'EducationController');
 Route::resource('/settings/location_information',   'LocationController');
 Route::resource('/settings/personal_information',   'PersonalController');
 Route::resource('/settings/picture_information',    'PictureController');
+Route::resource('/settings/schedule_information',   'ScheduleController');
 Route::resource('/settings/subject_information',    'SubjectController');
 
 // SEARCH PAGE
