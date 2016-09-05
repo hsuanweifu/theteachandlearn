@@ -11,6 +11,54 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// HOME PAGE
+Route::resource('/', 'HomeController');
+
+// SIGN UP PAGE
+Route::resource('/sign_up', 'SignUpController');
+
+// Activation Page
+Route::resource('/activate', 'ActivateController');
+
+// LOGIN PAGE
+Route::resource('/login', 'LoginController');
+
+// LOGOUT PAGE
+Route::resource('/logout', 'LogoutController');
+
+// FORGOT PASSWORD PAGE
+Route::resource('/forgot_password', 'ForgotPasswordController');
+
+// RESET PASSWORD PAGE
+Route::resource('/reset_password', 'ResetPasswordController');
+
+// PROFILE PAGE
+Route::resource('/profile', 'ProfileController');
+
+// SETTINGS PAGE
+Route::resource('/settings',                        'SettingsController');
+Route::resource('/settings/award_information',      'AwardController');
+Route::resource('/settings/education_information',  'EducationController');
+Route::resource('/settings/location_information',   'LocationController');
+Route::resource('/settings/personal_information',   'PersonalController');
+Route::resource('/settings/picture_information',    'PictureController');
+Route::resource('/settings/subject_information',    'SubjectController');
+
+// SEARCH PAGE
+Route::resource('/search', 'SearchController');
+
+// INBOX PAGE
+Route::resource('/inbox', 'InboxController');
+
+// MESSAGE PAGE
+Route::resource('/message', 'MessageController');
+
+// ABOUT US PAGE
+Route::resource('/about_us', 'AboutUsController');
+
+// ADMIN PAGE
+Route::resource('/admin', 'AdminController');
+
+// DEFAULT PAGE
+Route::resource('/{any}', 'HomeController');
