@@ -16,7 +16,7 @@
 Route::resource('/', 'HomeController');
 
 // SIGN UP PAGE
-Route::resource('/sign_up', 'SignUpController');
+Route::resource('/register', 'RegisterController');
 
 // Activation Page
 Route::resource('/activate', 'ActivateController');
