@@ -40,7 +40,7 @@ Route::resource('/profile', 'ProfileController');
 Route::resource('/settings',                        'SettingsController');
 Route::resource('/settings/award_information',      'AwardController');
 Route::resource('/settings/education_information',  'EducationController');
-Route::resource('/settings/location_information',   'LocationController');
+Route::resource('/settings/address_information',    'AddressController');
 Route::resource('/settings/personal_information',   'PersonalController');
 Route::resource('/settings/picture_information',    'PictureController');
 Route::resource('/settings/schedule_information',   'ScheduleController');
@@ -57,6 +57,12 @@ Route::resource('/message', 'MessageController');
 
 // ABOUT US PAGE
 Route::resource('/about_us', 'AboutUsController');
+
+// CAREER PAGE
+Route::resource('/career', 'CareerController');
+
+// Contact Us
+Route::resource('/contact_us', 'ContactUsController');
 
 // ADMIN PAGE
 Route::resource('/admin', 'AdminController');
