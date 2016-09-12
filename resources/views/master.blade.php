@@ -20,6 +20,7 @@
 @yield('navbar')
 
 <div class="container">
+    @yield('notification')
     @yield('content')
 </div>
 
